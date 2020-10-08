@@ -1,0 +1,19 @@
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 75px;
+}
+
+.image {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 456px) {
+  .logoWrapper {
+    margin-right: 15px;
+  }
+
+  .image {
+    margin-right: 5px;
+  }
+}

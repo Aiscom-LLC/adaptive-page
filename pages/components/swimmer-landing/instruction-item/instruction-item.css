@@ -1,0 +1,81 @@
+.item {
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  min-width: 390px;
+}
+
+.arrow {
+  flex: 0 0 12.5%;
+  background: url('/static/svgs/nextStep.svg') 50% 25px no-repeat;
+}
+
+.number {
+  opacity: 0.6;
+  font-size: 120px;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+}
+
+.text {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 1830px) {
+  .mobileArrow {
+    flex: 0 0 12.5%;
+    background: url('/static/svgs/nextStep.svg') 50% 25px no-repeat;
+  }
+  .shadowAarrow {
+    flex: 0 0 12.5%;
+    background: url('/static/svgs/nextStep.svg') 50% 25px no-repeat;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .item {
+    flex: 0 0 100%;
+    margin-bottom: 0px;
+  }
+
+  .arrow {
+    flex: 0;
+    min-height: 150px;
+    transform: rotate(90deg);
+    display: block;
+    background: url('/static/svgs/nextStep.svg') 50% 25px no-repeat;
+  }
+
+  .mobileArrow {
+    flex: 0;
+    min-height: 150px;
+    transform: rotate(90deg);
+    display: block;
+    background: url('/static/svgs/nextStep.svg') 50% 25px no-repeat;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subtitle {
+    font-size: 25px;
+  }
+
+  .text {
+    font-size: 17px;
+  }
+}

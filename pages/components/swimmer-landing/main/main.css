@@ -1,0 +1,179 @@
+.backgroundWrapper {
+  background: url('/static/imgs/main/background.jpg') no-repeat 0 0;
+  height: 100vh;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: var(--white);
+  max-height: 900px;
+}
+
+.title {
+  width: 510px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.tabletImage {
+  display: none;
+}
+
+.text {
+  width: 44%;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.tabletText {
+  display: none;
+}
+
+.imageWrapper {
+  position: absolute;
+  left: 38%;
+  width: 77%;
+  top: 360px;
+  bottom: -200px;
+}
+
+.image {
+  background: url('/static/imgs/main/laptop.png');
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: contain;
+}
+
+.mainFooter {
+  padding: 36px 0;
+  background: var(--white);
+}
+
+.button {
+  background-color: var(--orange);
+  color: var(--white);
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.button:focus {
+  background: var(--darkblue);
+}
+
+.button img {
+  width: 30%;
+  position: relative;
+  /* top: 0.2em; */
+  margin-left: 0.2em;
+}
+
+.tabletLink {
+  display: none;
+}
+
+.stores {
+  display: none;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .backgroundWrapper {
+    justify-content: center;
+  }
+
+  .imageWrapper {
+    display: none;
+  }
+
+  .tabletImage {
+    display: block;
+    width: 100%;
+    margin-top: -25%;
+  }
+
+  .title {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .tabletText {
+    display: block;
+    color: var(--black);
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+
+  .tabletLink {
+    display: flex;
+    justify-content: center;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .stores {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .stores img {
+    height: 60px;
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .backgroundWrapper {
+    background: url('/static/imgs/main/mob-background.png') no-repeat 0 0;
+    background-size: cover;
+    height: 60vh;
+  }
+
+  .stores img {
+    height: 40px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .tabletText {
+    font-size: 12px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 767px) {
+  .backgroundWrapper {
+    height: 500px;
+  }
+}

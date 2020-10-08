@@ -1,0 +1,49 @@
+.wrapper {
+  background: url('/static/imgs/instruction/background.jpg') center no-repeat;
+  padding: 100px 0;
+  background-size: cover;
+  color: var(--lightgrey);
+}
+
+.title {
+  color: var(--white);
+  margin-bottom: 100px;
+}
+
+.mobile {
+  display: none;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+
+.mobile span {
+  color: var(--blue);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1023px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    display: none;
+    font-size: 30px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .wrapper {
+    padding: 38px 0;
+  }
+}

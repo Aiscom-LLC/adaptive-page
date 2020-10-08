@@ -1,0 +1,40 @@
+{
+  "name": "crystal-landing",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "babel-eslint": "^10.0.1",
+    "classnames": "^2.2.6",
+    "dotenv": "^8.0.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "moment": "^2.24.0",
+    "next": "^8.0.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-media": "^1.10.0",
+    "react-scripts": "2.1.8",
+    "styled-jsx": "^3.2.1",
+    "webpack": "^4.32.2"
+  },
+  "scripts": {
+    "dev": "next -p 3005",
+    "start": "next start",
+    "build": "next build",
+    "export": "next build && next export"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
+  }
+}

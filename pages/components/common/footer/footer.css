@@ -1,0 +1,163 @@
+.footer {
+  background: var(--black);
+  padding: 40px 0;
+  color: var(--white);
+  min-height: 160px;
+}
+
+.wrapper {
+  padding: 0 45px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+}
+
+.right {
+  flex: 1 1 auto;
+  margin-left: 120px;
+}
+
+.crystal {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.itemWrapper {
+  margin-top: 20px;
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--lightgrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item:hover {
+  border-color: var(--skyblue);
+}
+
+.item:hover svg {
+  fill: var(--skyblue);
+}
+
+.downloads {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.downloads a {
+  text-decoration: none;
+  color: var(--white);
+  display: flex;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.downloads a:hover {
+  text-decoration: underline;
+}
+
+.payments {
+  margin-left: 8%;
+}
+
+.payments > p {
+  margin-bottom: 15px;
+}
+
+.payments > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.payments > ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.payments > ul li {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1919px) {
+  .content {
+    align-items: flex-start;
+  }
+
+  .downloads {
+    flex-direction: column;
+  }
+
+  .downloads a {
+    align-self: flex-end;
+    text-align: end;
+    width: auto;
+    padding: 0;
+  }
+
+  .downloads a:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .right {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .left {
+    display: block;
+  }
+
+  .downloads {
+    max-width: 100%;
+  }
+
+  .downloads a:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .payments {
+    margin: 20px 0 0;
+  }
+
+  .wrapper {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .downloads {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .downloads a {
+    align-self: flex-start;
+    text-align: start;
+  }
+
+  .wrapper {
+    padding: 0 15px;
+  }
+}

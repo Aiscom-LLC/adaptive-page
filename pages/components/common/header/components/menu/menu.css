@@ -1,0 +1,39 @@
+.menuContent {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #025cc6;
+  z-index: 255;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 65px 20px;
+  overflow: auto;
+}
+
+.menuContent .close {
+  top: 15px;
+  right: 15px;
+}
+
+.whiteLink {
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.whiteLink:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .tablet {
+    display: none;
+  }
+}

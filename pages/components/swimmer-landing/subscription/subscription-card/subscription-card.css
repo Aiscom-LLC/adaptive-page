@@ -1,0 +1,113 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+    height: 500px;
+    padding: 60px;
+    margin: 0 60px;
+}
+
+.light {
+    background-color: var(--lightgrey);
+}
+
+.dark {
+    background-color: var(--darkblue);
+}
+
+.title {
+    font-size: 28px;
+}
+
+.light .title {
+    color: var(--darkgrey);
+}
+
+.dark .title {
+    color: var(--white);
+}
+
+.price {
+    font-size: 100px;
+    line-height: 160px;
+}
+
+.light .price {
+    color: var(--blue);
+}
+
+.dark .price {
+    color: var(--white);
+}
+
+.period {
+    font-size: 18px;
+}
+
+.light .period {
+    color: #4D4F5C;
+    opacity: .5;
+}
+
+.dark .period {
+    color: var(--white);
+    opacity: .5;
+}
+
+.text {
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 0 30px;
+}
+
+.light .text {
+    color: var(--darkgrey);
+}
+
+.dark .text {
+    color: var(--white);
+}
+
+.btn {
+    width: 100%;
+    margin-top: auto;
+}
+
+.light .btn {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.link {
+    width: 100%;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 765px) {
+    .container {
+        width: 325px;
+        height: auto;
+        padding: 35px;
+        margin: 0;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 50px;
+        line-height: 80px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 25px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}

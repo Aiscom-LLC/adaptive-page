@@ -1,0 +1,51 @@
+:root {
+  --blue: #008DFF;
+  --skyblue: #00C1FF;
+  --darkblue: #0250BF;
+  --red: #D11313;
+  --black: #1E1E1E;
+  --darkgrey: #707070;
+  --grey: #CFCFCF;
+  --lightgrey: #F8F8F8;
+  --white: #FFFFFF;
+  --orange: #fc4c02;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border-width: 0;
+  font-family: 'Montserrat';
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--grey);
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.paddingWrapper {
+  padding: 0 7%;
+  overflow: hidden;
+}
+
+.wideWrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: white;
+}
+
+.blue {
+  color: var(--blue);
+}

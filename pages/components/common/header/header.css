@@ -1,0 +1,105 @@
+.disableScroll {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 255;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 30px;
+  max-width: 1920px;
+  margin: 0 auto
+}
+
+.link {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 20px;
+  margin-right: 115px;
+  cursor: pointer;
+}
+
+.login {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.link:hover,
+.activeLink {
+  text-decoration: underline;
+}
+
+.headerItem {
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  margin-right: 10px;
+}
+
+.button {
+  color: var(--darkblue);
+  background: white;
+  min-width: 260px;
+  width: 100%;
+  height: 60px;
+}
+
+.linkButton {
+  color: var(--darkblue);
+  padding: 10px 25px;
+  height: 60px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.button:focus {
+  color: var(--white);
+  background: var(--skyblue);
+  outline: 0px;
+}
+
+.menuIcon {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .link,
+  .button,
+  .login,
+  .linkButton {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  .content {
+    padding: 16px 13px;
+  }
+
+  .menuIcon {
+    width: 24px;
+    height: 24px;
+  }
+}
